@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
 });
 
 // Route xử lý agent
-app.post("/agent", (req, res) => {
+router.post("/agent", (req, res) => {
   const { task, params } = req.body;
 
   let result = null;
